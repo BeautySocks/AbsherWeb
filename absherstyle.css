@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.ui-body-a,.ui-overlay-a{
+		color: #fff;
+	text-shadow: 0 1px 0 #111;
+	font-weight: 400;
+	background-image: url(css/images/2.png);
+   background-size: cover;
+}
+ui-body-b,.ui-overlay-b{
+background:#222;
+color:#fff;
+text-shadow:0 1px 0 #111;
+font-weight:400;
+background-image: url(css/images/2.png);
+   background-size: cover;
+}
+]ui-body-c,.ui-overlay-c{
+background:#222;
+color:#fff;
+text-shadow:0 1px 0 #111;
+font-weight:400;
+background-image: url(css/images/2.png);
+   background-size: cover;
+
+}a {
+	font-weight: bold;
+	font-size: 16px;
+}
+.my-page div ul .bg {
+	background-image: url(css/images/hd1.png);
+	background-repeat: no-repeat;
+}
+
+.arabic {
+	text-align: right;
+}
+.ui-page .ui-content .ui-listview .ui-li-thumb {
+    left  : auto;
+    right : 30px;
+}
+.ListH {
+	font-family: "DIN Next LT Arabic Light";
+	vertical-align: middle;
+}
+.ui-content {
+overflow: hidden;
+margin-bottom: 0px;
+
+}
+.centerBanner {
+text-align: center;
+}
+.divRight {
+text-align: right;
+}
+.ui-page .ui-content .ui-listview .ui-btn-text a {
+	text-align: right;
+	padding-right: 50px;
+	
+}
+.type-interior div ul li .ListH h3 {
+	margin-right: 80px;
+}
+.ui-body-a .type-interior div div {
+	margin-bottom: 0px;
+	
+}
+.F{
+bottom:0; position:absolute !important;  width:100%;}
+
+.ui-collapsible-set { 
+margin: 0 0; 
+}
+
+#fff {
+	border-left: 5px solid #0f0;
+	background-color: #F03;
+	color: #0CC;
+}
+#greenHero{
+background:#ffffff ;
+font-weight:bold;
+background-image:-webkit-gradient(linear,left top,left bottom,from( rgba(232,233,232,1) ),to( rgba(232,233,232,0.5) )); 
+background-image:-webkit-linear-gradient( rgba(232,233,232,1),rgba(232,233,232,0.5) ); background-image:   -moz-linear-gradient( rgba(232,233,232,1),rgba(232,233,232,0.5) ); background-image:    -ms-linear-gradient( rgba(232,233,232,0.5),rgba(232,233,232,1) ); background-image:     -o-linear-gradient( rgba(232,233,232,1),rgba(232,233,232,0.5) ); background-image:        linear-gradient( rgba(232,233,232,1),rgba(232,233,232,0.5) );
+}
