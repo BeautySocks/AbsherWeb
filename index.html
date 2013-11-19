@@ -8,7 +8,7 @@
 
 <!--3 files needed to download from iquery-->
 <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css"/>
-<script src ="js/jquery.mobile-1.3.2.min.js"></script>
+
 
 <!-- Our own Style Sheet -->
 <link href="absherstyle.css" rel="stylesheet" type="text/css">
@@ -21,11 +21,10 @@
 <!-- End Date-->
 
 <!------->
-<script type="text/javascript" src ="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src ="js/jquery-1.10.2.min.js"></script><script type="text/javascript" src ="js/jquery.mobile-1.3.2.min.js"></script>
 <!------->
 
-<!--Date-->
-<script type="text/javascript" src="js/date/jquery.mobile.min.js"></script>
+<!--Date //// CHECK LATER FOR ANOTHER WAY-->
 <script type="text/javascript" src="js/date/jqm-datebox.core.min.js"></script>
 <script type="text/javascript" src="js/date/jqm-datebox.mode.flipbox.min.js"></script>
 <script type="text/javascript" src="js/date/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
@@ -93,7 +92,7 @@
 <!-- End of content div -->
 
 <!-- a footer is optional -->
-<div data-role="footer" class="F">
+<div data-role="footer">
 <!-- Navbar -->
 	<div data-role="navbar" data-iconpos="left">
 		<ul id="options">
@@ -177,6 +176,7 @@
       <option value="SHJ">الشارقة</option>
       <option value="FUJ">الفجيرة</option>
       <option value="RAC">رأس الخيمة</option>
+      <option value="AJM">عجمان</option>
       </select>
       </div>
       
@@ -199,99 +199,110 @@ data-options='{"mode": "flipbox"}'>
 <!-- Start of Header -->
 <div data-role="header">
 <h1>عن المبادرة</h1>
-<a href ="#index-panel"data-role="button" data-iconpos="notext" data-icon="bars" data-inline="true">Menu</a> 
+<a href ="#nav-panel"data-role="button" data-iconpos="notext" data-icon="bars" data-inline="true">Menu</a> 
 <a href ="#info-panel" data-role="button" data-iconpos="notext" data-icon="info" data-inline="true">InfoPanel</a>
 </div>
 <!-- End of Header -->
 <!-- Start of Content -->
 <div data-role="content">	
     
-<!-- Start of collapse Set --> 
-<div data-role="collapsible-set" data-inset="false" data-iconpos="right">
-<!-- Start of Collapse ta3reef List -->
+<!-- Start of collapse ta3reef program --> 
+<div data-role="collapsible" data-collapsed="false" data-theme="e" data-content-theme="c" class="ui-collapsible ui-collapsible-inset">
+<h3 >تعريف البرنامج</h3>
+<!-- Start of Collapse Nabtha -->
+<div data-role="collapsible" data-theme="c" data-content-theme="c" class="ui-collapsible ui-collapsible-inset ui-collapsible-collapsed">
+<h3>نبذة عن البرنامج</h3>
+<!-- Start of Content List -->
 <div data-role="collapsible" data-collapsed="false">
-<h3>تعريف البرنامج</h3>
-<ul data-role="listview" id="panelcategories" data-icon="false">
+<ul data-role="listview" id="panelcategories" data-icon="false"> 
+<li>بناء على التوجيهات السامية لصاحب السمو الشيخ خليفة بن زايد آل نهيان رئيس الدولة "حفظه الله" بشأن إطلاق مبادرة "أبشر" لتعزيز مشاركة الكوادر الوطنية في سوق العمل، و تنفيذاً للمحور الاستراتيجي الخاص بتشجيع المواطنين للعمل في القطاع الخاص، وجه الشيخ منصور بن زايد آل نهيان "رعاه الله" نائب رئيس مجلس الوزراء وزير شؤون الرئاسة بإعداد برنامج تشرف عليه وزارة شؤون الرئاسة، و يتم تنفيذه بالشراكة مع القطاع العام و الخاص يعنى بتقديم عروض و ميزات خاصة و حصرية للمواطنين العاملين في القطاع الخاص، و ذلك لدعم التحاق و استمرار الكوادر الوطنية في العمل لدى هذا القطاع، حيث عُهد إلى وزارة العمل بتنفيذ البرنامج بما أنها الجهة المعنية بتنظيم سوق العمل بالدولة</li>
+</ul>
+</div>
+<!-- End of Content List -->
+</div>
+<!-- End of Collapse Nabtha -->
+
+<!-- Start of Collapse Ahdaf -->
+<div data-role="collapsible" data-theme="c" data-content-theme="c" class="ui-collapsible ui-collapsible-inset ui-collapsible-collapsed">
+<h3>أهداف البرنامج</h3>
+<!-- Start of Content List -->
+<div data-role="collapsible" data-collapsed="false">
+<ul data-role="listview" id="panelcategories" data-icon="false"> 
 <li>
-بناء على التوجيهات السامية لصاحب السمو الشيخ خليفة بن زايد آل نهيان رئيس الدولة "حفظه الله" بشأن إطلاق مبادرة "أبشر" لتعزيز مشاركة الكوادر الوطنية في سوق العمل، و تنفيذاً للمحور الاستراتيجي الخاص بتشجيع المواطنين للعمل في القطاع الخاص، وجه الشيخ منصور بن زايد آل نهيان "رعاه الله" نائب رئيس مجلس الوزراء وزير شؤون الرئاسة بإعداد برنامج تشرف عليه وزارة شؤون الرئاسة، و يتم تنفيذه بالشراكة مع القطاع العام و الخاص يعنى بتقديم عروض و ميزات خاصة و حصرية للمواطنين العاملين في القطاع الخاص، و ذلك لدعم التحاق و استمرار الكوادر الوطنية في العمل لدى هذا القطاع، حيث عُهد إلى وزارة العمل بتنفيذ البرنامج بما أنها الجهة المعنية بتنظيم سوق العمل بالدولة
+دعم جهود التوطين و زيادة مشاركة الكوادر الوطنية في القطاع الخاص من خلال توفير مزايا خاصة للمواطنين العاملين في هذا القطاع
+<br />
+توجيه برامج خدمة المجتمع المعتمدة لدى شركاء البرنامج لمعالجة القضايا ذات البعد الوطني مثل حل مشكلة البطالة
+<br />
+تحسين قدرة القطاع الخاص على استقطاب و استبقاء الكوادر الوطنية من خلال تفعيل أواصر التعاون و التنسيق ما بين جهات القطاع الخاص، و رفع قدرتها على المنافسة في مجال استقطاب الكوادر الوطنية
+<br />
 </li>
 </ul>
+</div>
+<!-- End of Content List -->
+</div>
+<!-- End of Collapse Ahdaf -->
+
+
+<!-- Start of Collapse Ni6a8 -->
+<div data-role="collapsible" data-theme="c" data-content-theme="c" class="ui-collapsible ui-collapsible-inset ui-collapsible-collapsed">
+<h3>نطاق تطبيق البرنامج</h3>
+<!-- Start of Content List -->
+<div data-role="collapsible" data-collapsed="false">
+<ul data-role="listview" id="panelcategories" data-icon="false"> 
+<li>
+يستفيد من البرنامج المواطنون العاملون بالقطاع الخاص و المسجلون لدى وزارة العمل، على أن يتم تعميمه في المرحلة الثانية على جميع المواطنين العاملين في القطاعات الخاصة و المسجلين لدى الجهات المختلفة المعنية بسوق العمل وفق الخطة المعتمدة لذلك.
+</li>
+</ul>
+</div>
+<!-- End of Content List -->
+</div>
+<!-- End of Collapse Ni6a8 -->
+
 </div>
 <!-- End of ta3reef List -->
 
 <!-- Start of Collapse questions List -->
 <div data-role="collapsible" data-collapsed="false">
 <h3>الأسئلة الشائعة</h3>
-<ul data-role="listview" id="panelcategories" data-icon="false">
-<li>
-  الأسئلة المتعلقة ببرنامج الخصومات و العروض المميزة للمواطنين العاملين بالقطاع الخاص:
-  <li>ما هي بطاقة أبشر؟</li>
-  <br />
-  بطاقة امتيازات و خصومات متميزة لمواطني دولة الإمارات العاملين في القطاع الخاص.
-  -	من هم المستهدفون؟
-  مواطني دولة الإمارات العاملين بالقطاع الخاص.
-  -	ما الهدف من البطاقة؟
-  تقديم الدعم لمواطني دولة الإمارات العربية المتحدة العاملين بالقطاع الخاص عن طريق تقديم مزايا خاصة و عروض حصرية تلبي احتياجاتهم و تحقق تطلعاتهم، باعتبارهم حجر الزاوية و الركيزة الأساسية في تطوير و استقرار سوق العمل.
-  -	ما هي شروط استحقاق البطاقة؟
-  يشترط لقبول العضو في البرامج ما يلي:
-  •	أن يكون من مواطني دولة الإمارات العربية المتحدة.
-  •	أن تكون له بطاقة عمل صادرة من وزارة العمل. 
-  •	أن يكون على رأس عمله، و أمضى مدة لا تقل عن ستة أشهر مستمرة لدى منشأة واحد تحتسب من تاريخ إصدار بطاقة العمل.
-  •	أن يكون مسجلاً في الهيئة العامة للمعاشات و التأمينات الاجتماعية أو صندوق معاشات و مكافآت التقاعد لإمارة أبوظبي.
-  •	أن يكون راتبه محولاً من خلال نظام حماية الأجور(WPS)  لآخر 3 أشهر.
-  •	أن يستوفي بيانات نموذج التسجيل و اعتماده إلكترونياً.
-  -	كم هي مدة البطاقة؟
-  سنة واحدة قابلة للتجديد.
-  -	هل يتم تجديدها تلقائياً؟
-  لا، بل يقوم الموظف المواطن بالتقديم بطلب جديد عند انتهائها.
-  -	هل يمكن لأحد من أفراد العائلة استخدامها؟ 
-  لا، هي مخصصة لحاملها فقط .
-  -	كيف يمكن معرفة العروض المقدمة؟
-  عن طريق زيارة بوابة وزارة العمل الإلكترونية: www.mol.gov.ae
-  -	كيف يستطيع المواطن العامل بالقطاع الخاص التسجيل في البرنامج؟
-  تعبئة النموذج عبر البوابة الإلكترونية للوزارة و اعتماده إلكترونياً و ذلك بإتباع الخطوات التالية:
-  •	اختر مبادرة أبشر من الصفحة الرئيسية.
-  •	اختر تسجيل المواطنين العاملين بالقطاع الخاص.
-  •	قم بإدخال رقم بطاقة العمل.
-  •	قم بتعبئة النموذج و إرفاق المستندات المطلوبة.
-  •	قم بقراءة الشروط والأحكام والموافقة عليها.
-  •	انقر على أيقونة (إرسال).
-  •	في حال استيفاء الشروط سيتم التواصل مع مقدم طلب وإعلامه بذلك، و سترسل البطاقة له مع ضرورة إثبات الشخصية عند استلامها.
-  •	في حال عدم استيفاء الشروط يتم وضع حالة الطلب تحت الإجراء و مخاطبة مقدم الطلب و إعلامه بعدم استيفائه للشروط. 
-  -	هل توجد هناك أي شروط لمستخدمي بطاقة أبشر؟
-  •	تستخدم البطاقة بواسطة حاملها فقط.
-  •	يتم استلام البطاقة بواسطة المستفيد شخصياً و يتم إرسالها بواسطة خدمات البريد الخاص  إلى العنوان المذكور في استمارة التسجيل.
-  •	يتعين على المستفيد التوقيع عند الاستلام و عرض إثبات للشخصية.
-  •	ستتحمل الوزارة تكاليف إصدار البطاقة و رسوم التوصيل في حالة الإصدار و حالات التجديد.
-  •	تستخدم البطاقة فقط في الأغراض و الأماكن المذكورة في الموقع الإلكتروني لوزارة العمل. 
-  •	تسري العروض المقدمة على الأسعار الأصلية للمنتجات و الخدمات ولا تتزامن مع العروض الترويجية و التخفيضات.
-  •	في حال التحاق حامل البطاقة بمنشأة جديدة يتعين عليه استخراج بطاقة أبشر جديدة.
-  •	يجوز للوزارة إلغاء البطاقة في حال سوء استخدامها أو رهنها لدى أي جهة.
-  •	يحق للوزارة تعديل الأحكام و الشروط المذكورة في الدليل في حال الحاجة و سوف يخطر المستفيد بذلك.
-  •	الوزارة غير مسؤولة عن أي أضرار أو خسارة يتكبدها حامل البطاقة نتيجة شراء سلعة أو الاستفادة من خدمات أو غير ذلك.
-  •	تعتبر بطاقة أبشر لاغية في حال إلغاء عقد و بطاقة العمل.  
-  -	ما هي المؤسسات الداعمة للمشروع؟
-  هي الجهات الراعية التي تقدم العروض و المزايا الخاصة و الحصرية لمواطني دولة الإمارات العاملين بالقطاع الخاص. 
-  
-  
-  -	ما آلية تسجيل الشركات التي ترغب بتقديم امتيازات و خصومات؟
-  تعبئة النموذج عبر البوابة الإلكترونية للوزارة www.mol.gov.ae و اعتماده الكترونياً و ذلك بإتباع الخطوات التالية:
-  •	اختر مبادرة أبشر من الصفحة الرئيسية.
-  •	اختر تسجيل الشركات الداعمة.
-  •	قم بتعبئة النموذج و إرفاق المستندات المطلوبة.
-  •	قم بقراءة الشروط والأحكام والموافقة عليها.
-  •	انقر على أيقونة (إرسال).
-  •	في حال استيفاء الشروط و المعايير سيتم التواصل مع الشركة و إبلاغها بالموافقة. 
-  •	في حال عدم استيفاء الشروط سيتم إخطار الشركة لتحسين العرض المقدم.
-  •	سيتم توقيع مذكرة تفاهم بين وزارة العمل و الشركة الداعمة للبدء بتنفيذ العرض.
-  
-</p>
-</li>
-</ul>
 </div>
 <!-- End of ta3reef List -->
 </div>
+<!-- End of Collapsable Set -->
+</div>
 <!-- End of Contents-->
+<!-- a footer is optional -->
+<div data-role="footer">
+<!-- Navbar -->
+	<div data-role="navbar" data-iconpos="left">
+		<ul id="options">
+			<li>
+            <a href="a.html"><img src="css/images/home2.png" width="30" height="30"></a>
+            </li>
+			<li>
+            <a href="b.html"><img src="css/images/profile1.png" width="30" height="30"></a>
+            </li>
+            <li>
+            <a href="b.html"><img src="css/images/tag1.png" width="30" height="30"></a>
+            </li>
+            <li>
+            <a href="b.html"><img src="css/images/contact1.png" width="30" height="30"></a>
+            </li>
+		</ul>
+	</div>
+    <!-- /navbar -->
+</div> 
+<!-- End of footer -->
+<!-- A Panel --> 
+<!--<div id="nav-panel" data-role="panel" data-theme="a" data-position-fixed="true">
+<ul class="nav-search" data-role="listview" data-theme="a">
+<li data-icon="delete"><a href="#" data-rel="close">إغلاق القائمة</a></li>
+
+<li><a href="#panel-fixed-page2">الدخول</a></li>
+<li><a href="#panel-fixed-page2">التسجيل</a></li>
+</ul>
+</div>
+</div>--> 
+<!-- End Panel -->
 </div>
 <!-- End of About Absher Page-->
 </body>

@@ -75,7 +75,7 @@ text-align: right;
 	
 }
 .F{
-bottom:0; position:absolute !important;  width:100%;}
+bottom:0; position:absolute !important; top: auto !important; width:100%;}
 
 .ui-collapsible-set { 
 margin: 0 0; 
