@@ -7,6 +7,15 @@
 	background-image: url(css/images/2.png);
    background-size: cover;
 }
+.ui-body-a div div div ul li p {
+	text-align: right;
+}
+.ui-body-a div div div h3 {
+	text-align: right;
+
+}
+
+
 ui-body-b,.ui-overlay-b{
 background:#222;
 color:#fff;
@@ -39,9 +48,8 @@ background-image: url(css/images/2.png);
     left  : auto;
     right : 30px;
 }
-.ListH {
-	font-family: "DIN Next LT Arabic Light";
-	vertical-align: middle;
+.Ptext {
+	text-align: justify;
 }
 .ui-content {
 overflow: hidden;
@@ -83,4 +91,21 @@ background:#ffffff ;
 font-weight:bold;
 background-image:-webkit-gradient(linear,left top,left bottom,from( rgba(232,233,232,1) ),to( rgba(232,233,232,0.5) )); 
 background-image:-webkit-linear-gradient( rgba(232,233,232,1),rgba(232,233,232,0.5) ); background-image:   -moz-linear-gradient( rgba(232,233,232,1),rgba(232,233,232,0.5) ); background-image:    -ms-linear-gradient( rgba(232,233,232,0.5),rgba(232,233,232,1) ); background-image:     -o-linear-gradient( rgba(232,233,232,1),rgba(232,233,232,0.5) ); background-image:        linear-gradient( rgba(232,233,232,1),rgba(232,233,232,0.5) );
+}
+
+/* Flip Mode Styles */
+.ui-datebox-flipcontent { text-align: center; height: 125px; margin-bottom: -40px;}
+.ui-datebox-flipcontent div { margin-left: 3px; margin-right: 3px; width: 77px; height: 120px; display: inline-block; text-align: center; zoom: 1; *display: inline; overflow: hidden;}
+.ui-datebox-flipcontentd div { width: 60px; }
+.ui-datebox-flipcenter { border: 1px solid #eee; height: 40px; margin-left: 10px; width: 260px; margin-right: auto; margin-left: auto; position: relative; top: -45px;}
+.ui-datebox-flipcontent ul { list-style-type: none; display: inline; }
+.ui-datebox-flipcontent li { height: 30px; }
+.ui-datebox-flipcontent li span { margin-top: 7px; display: block; }
+
+
+.ui-collapsible h3 .ui-btn-inner
+{
+    text-align:right;
+}.ui-body-a div div div #panelcategories li {
+	text-align: right;
 }
