@@ -29,13 +29,37 @@
 <script type="text/javascript" src="js/date/jqm-datebox.mode.flipbox.min.js"></script>
 <script type="text/javascript" src="js/date/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
 <!-- End Date-->
+<!-- Script for splash screen-->
+<script type="text/javascript">
+$(function() {
+  setTimeout(hideSplash, 3000);
+});
 
+function hideSplash() {
+  $.mobile.changePage("#overlay", "fade");
+}
+</script>
+<!-- End of script for splash screen-->
 </head> 
 <!-- End of Head -->
 
 <!-- Start of Body -->
 <body class="ui-body-a">
 
+<!--start of splash screen-->
+<div data-role="page"  id="splash"> 
+    <div  id="splash">
+    <img src="css/images/splashscreen.png">
+    </div>
+</div>
+<!--End of splash screen-->
+
+<!-- Help screen-->
+<div data-role="page" id="overlay">
+<div id="overlay">
+<a href="#home" data-role="button" data-icon="delete" data-theme="a" data-iconpos="notext">Delete</a></div>
+</div>
+<!--End of help screen-->
 <!-- Start of Page Div -->
 <div data-role="page" id="home" class="type-interior">
 
@@ -173,7 +197,7 @@
 
 
 <!-- Start of locals registration page-->
-<div data-role="page" id="LocalReg">
+<div data-role="page" id="LocalReg" >
 
 <!-- Start of Header -->
 <div data-role="header">
@@ -181,6 +205,7 @@
 
 <!-- Start of Panel -->
 <a href ="#nav-panel"data-role="button" data-iconpos="notext" data-icon="bars" data-inline="true">Menu</a>
+<a href="#" data-icon="forward" data-rel="back" data-iconpos="notext">الرجوع</a>
 <!-- End of Panel -->
 
 </div>
@@ -192,31 +217,31 @@
 	<form action="#" method="get" >
       <!--Work ID-->
       <div data-role="fieldcontain">
-      <label for="workID">رقم بطاقة العمل</label>
+      <label for="workID" dir="rtl"><strong>رقم بطاقة العمل</strong></label>
       <input name="workID" type="text" id="workID" value=""/>
       </div>	
       
       <!--PhoneNo-->
       <div data-role="fieldcontain">
-	  <label for="PhoneNo">رقم الهاتف المتحرك</label>
+	  <label for="PhoneNo" dir="rtl"><strong>رقم الهاتف المتحرك</strong></label>
 	  <input name="PhoneNo" type="text" id="PhoneNo" value=""/>
       </div>
       
       <!--Email-->
       <div data-role="fieldcontain">
-      <label for="PhoneNo">عنوان البريد الإلكتروني </label>
+      <label for="PhoneNo" dir="rtl"><strong>عنوان البريد الإلكتروني </strong></label>
       <input name="PhoneNo" type="text" id="PhoneNo" value=""/>
       </div>
       
       <!--PO Box-->
       <div data-role="fieldcontain">
-      <label for="PhoneNo">صندوق البريد</label>
+      <label for="PhoneNo" dir="rtl"><strong>صندوق البريد</strong></label>
       <input name="PhoneNo" type="text" id="PhoneNo" value=""/>
       </div>
       
       <!--Emirates-->
       <div data-role="fieldcontain">
-      <label for="select-choice-a" class="select"></label>
+      <label for="select-choice-a" class="select" dir="rtl"><strong>الإمارة</strong></label>
       <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
       <option value="AD">أبوظبي</option>
       <option value="UMQ">أم القيوين</option>
@@ -230,12 +255,12 @@
       
       <!--Date-->      
       <div data-role="fieldcontain">
-	  <label for="mydate">تاريخ التسجيل في المعاشات</label>
+	  <label for="mydate" dir="rtl"><strong>تاريخ التسجيل في المعاشات</strong></label>
 	  <input name="mydate" id="mydate" type="date" data-role="datebox"
 data-options='{"mode": "flipbox"}'>
       </div>
       
-      <button type="submit" data-icon="check" >تسجيل</button>
+      <button type="submit" data-icon="check" ><strong>تسجيل</strong></button>
 
    </form>
 <!-- End of Form-->
@@ -286,6 +311,7 @@ data-options='{"mode": "flipbox"}'>
 
 <!-- Start of Panel -->
 <a href ="#nav-panel"data-role="button" data-iconpos="notext" data-icon="bars" data-inline="true">Menu</a>
+<a href="#" data-icon="forward" data-rel="back" data-iconpos="notext">الرجوع</a>
 <!-- End of Panel -->
 
 </div>
@@ -668,6 +694,7 @@ data-options='{"mode": "flipbox"}'>
 
 <!-- Start of Panel -->
 <a href ="#nav-panel"data-role="button" data-iconpos="notext" data-icon="bars" data-inline="true">Menu</a>
+<a href="#" data-icon="forward" data-rel="back" data-iconpos="notext">الرجوع</a>
 <!-- End of Panel -->
 
 </div>
@@ -795,6 +822,7 @@ data-options='{"mode": "flipbox"}'>
 <h1> تسجيل الشركات الداعمة</h1>
 <!-- Start of Panel -->
 <a href ="#nav-panel"data-role="button" data-iconpos="notext" data-icon="bars" data-inline="true">Menu</a>
+<a href="#" data-icon="forward" data-rel="back" data-iconpos="notext">الرجوع</a>
 <!-- End of Panel -->
 </div>
 <!-- End of Header -->
@@ -935,6 +963,7 @@ data-options='{"mode": "flipbox"}'>
 
 <!-- Start of Panel -->
 <a href ="#nav-panel"data-role="button" data-iconpos="notext" data-icon="bars" data-inline="true">Menu</a>
+<a href="#" data-icon="forward" data-rel="back" data-iconpos="notext">الرجوع</a>
 <!-- End of Panel -->
 
 </div>
@@ -1052,6 +1081,7 @@ data-options='{"mode": "flipbox"}'>
 <h1>تواصل معنا</h1>
 <!-- Start of Panel -->
 <a href ="#nav-panel"data-role="button" data-iconpos="notext" data-icon="bars" data-inline="true">Menu</a>
+<a href="#" data-icon="forward" data-rel="back" data-iconpos="notext">الرجوع</a>
 <!-- End of Panel -->
 </div>
 <!-- End of Header -->
@@ -1064,7 +1094,7 @@ data-options='{"mode": "flipbox"}'>
       <td><a href="contactus@absher.ae"><img src="css/images/email.png" width="70" height="70"></a></td>
     </tr>
     <tr>
-      <td><a href="tel:971-50-6267900"><img src="css/images/contact.png" width="70" height="70"></a></td>
+      <td><a href="tel:971-2-2222221"><img src="css/images/contact.png" width="70" height="70"></a></td>
       <td><a href="http://instagram.com/AbsherUAE"><img src="css/images/insta.png" width="70" height="70"></a></td>
     </tr>
     <tr>
@@ -1072,7 +1102,6 @@ data-options='{"mode": "flipbox"}'>
       <td><a href="https://twitter.com/AbsherUAE"><img src="css/images/twitter.png" width="70" height="70"></a></td>
     </tr>
   </table>
-  <p>&nbsp;</p>
 <a href="#addfeedback" data-role="button"><strong>أضف اقتراح</strong></a>
 
 
@@ -1116,7 +1145,6 @@ data-options='{"mode": "flipbox"}'>
 <!-- End of Contact Us Page -->
 
 
-
 <!-- Start of Feedback Page -->
 <div data-role="page" id="addfeedback" data-icon="true">
 <!-- Start of Header -->
@@ -1124,6 +1152,7 @@ data-options='{"mode": "flipbox"}'>
 <h1>أضف اقتراح</h1>
 <!-- Start of Panel -->
 <a href ="#nav-panel"data-role="button" data-iconpos="notext" data-icon="bars" data-inline="true">Menu</a>
+<a href="#" data-icon="forward" data-rel="back" data-iconpos="notext">الرجوع</a>
 <!-- End of Panel -->
 </div>
 <!-- End of Header -->
