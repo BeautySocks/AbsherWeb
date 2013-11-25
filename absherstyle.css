@@ -106,6 +106,30 @@ background-image:-webkit-linear-gradient( rgba(232,233,232,1),rgba(232,233,232,0
 .ui-collapsible h3 .ui-btn-inner
 {
     text-align:right;
-}.ui-body-a div div div #panelcategories li {
+}.ui-body-a div div div #panelcategories {
 	text-align: right;
 }
+
+#ContentT
+{
+background:#f2efe6 ;
+font-weight:bold;
+}
+.ul-right-align
+{
+padding: 0;
+margin: 0;
+text-align: right;
+}
+
+.li-right-align
+{
+   display: block;
+   float: right;
+
+}
+
+.Panel
+{
+	top: 35%;
+	}
