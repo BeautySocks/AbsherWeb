@@ -36,7 +36,7 @@ $(function() {
 });
 
 function hideSplash() {
-  $.mobile.changePage("#overlay", "fade");
+  $.mobile.changePage("#home", "fade");
 }
 </script>
 <!-- End of script for splash screen-->
@@ -48,17 +48,17 @@ function hideSplash() {
 
 <!--start of splash screen-->
 <div data-role="page"  id="splash"> 
-    <div  id="splash">
+    <div id="splash">
     <img src="css/images/splashscreen.png">
     </div>
 </div>
 <!--End of splash screen-->
 
 <!-- Help screen-->
-<div data-role="page" id="overlay">
+<!--<div data-role="page" id="overlay">
 <div id="overlay">
 <a href="#home" data-role="button" data-icon="delete" data-theme="a" data-iconpos="notext">Delete</a></div>
-</div>
+</div>-->
 <!--End of help screen-->
 <!-- Start of Page Div -->
 <div data-role="page" id="home" class="type-interior">
@@ -214,7 +214,7 @@ function hideSplash() {
 <!-- Start of Content -->
 <div data-role="content">	
 <!-- Start of Form -->	
-	<form action="#" method="get" >
+	<form action="#home" method="post" >
       <!--Work ID-->
       <div data-role="fieldcontain">
       <label for="workID" dir="rtl"><strong>رقم بطاقة العمل</strong></label>
@@ -260,8 +260,7 @@ function hideSplash() {
 data-options='{"mode": "flipbox"}'>
       </div>
       
-      <button type="submit" data-icon="check" ><strong>تسجيل</strong></button>
-
+      <button type="submit" data-icon="check"><strong>تسجيل</strong></button>
    </form>
 <!-- End of Form-->
 	</div>
