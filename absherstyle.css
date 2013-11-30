@@ -1,11 +1,21 @@
 @charset "utf-8";
 
-.ui-body-a,.ui-overlay-a{
-	color: #000;
-	text-shadow: 0 1px 0 #111;
-	font-weight: 400;
-	background-image: url(css/images/2.png);
-	background-size: cover;
+ui-body-a,.ui-overlay-a{
+background:#222;
+color:#000;
+text-shadow:0 1px 0 #111;
+font-weight:400;
+background-image: url(css/images/2.png);
+   background-size: cover;
+}
+
+ui-body-b,.ui-overlay-b{
+background:#222;
+color:#000;
+text-shadow:0 1px 0 #111;
+font-weight:400;
+background-image: url(css/images/2.png);
+   background-size: cover;
 }
 .ui-body-a div div div ul li p {
 	text-align: right;
@@ -24,7 +34,7 @@ font-weight:400;
 background-image: url(css/images/2.png);
    background-size: cover;
 }
-]ui-body-c,.ui-overlay-c{
+ui-body-c,.ui-overlay-c{
 background:#222;
 color:#000;
 text-shadow:0 1px 0 #111;
@@ -79,9 +89,7 @@ text-align: right;
 .F{
 bottom:0; position:absolute !important; top: auto !important; width:100%;}
 
-.ui-collapsible-set { 
-margin: 0 0; 
-}
+
 
 #fff {
 	border-left: 5px solid #0f0;
@@ -149,4 +157,23 @@ height:100%;
     height: 100%;
     width: 100%;
     background-color: rgba(0,0,0,0.3);
+}
+
+.whiteColor {
+color: white;
+}
+
+.SmallFont
+{
+	font-size:14px;
+	}
+
+.popupBG{
+	background-image: url(css/images/2.png);
+	color: #000;
+	text-shadow: 0 0px 0;
+
+}
+#nav-panel ul li a {
+	text-align: right;
 }
