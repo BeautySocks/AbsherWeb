@@ -60,12 +60,16 @@ function hideSplash() {
 <link href="mastyle.css" rel="stylesheet" type="text/css" media="all" />
 
 <!-- End of Home Slider-->
-
+<script>
+$(document).ready(function() {
+	document.addEventListener("deviceready", onDeviceReady, false);
+});
+</script>
 </head> 
 <!-- End of Head -->
 
 <!-- Start of Body -->
-<body class="ui-body-a">
+<body class="ui-body-a" onload="load()">
 
 
 <!-- Start of Page Div -->
